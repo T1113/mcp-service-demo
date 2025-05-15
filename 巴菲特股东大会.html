@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2024年巴菲特股东大会核心观点</title>
+    <!-- TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Framer Motion -->
+    <script src="https://unpkg.com/framer-motion@10.16.4/dist/framer-motion.umd.min.js"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        .gradient-text {
+            background: linear-gradient(45deg, #FF6B6B, #4ECDC4);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+            padding: 1.5rem;
+        }
+        .bento-item {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 1rem;
+            padding: 1.5rem;
+            transition: all 0.3s ease;
+        }
+        .bento-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        .stats-number {
+            font-size: 3rem;
+            font-weight: bold;
+            background: linear-gradient(45deg, #FF6B6B, #4ECDC4);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-gray-900 to-black text-white min-h-screen">
+    <!-- 顶部导航 -->
+    <nav class="fixed top-0 w-full bg-black bg-opacity-50 backdrop-blur-md z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <i class="fas fa-chart-line text-2xl text-blue-500"></i>
+                <span class="text-xl font-bold">2024巴菲特股东大会</span>
+            </div>
+            <div class="flex items-center space-x-6">
+                <a href="#investment" class="hover:text-gray-300">投资观点</a>
+                <a href="#apple" class="hover:text-gray-300">苹果减持</a>
+                <a href="#japan" class="hover:text-gray-300">日本投资</a>
+                <a href="#successor" class="hover:text-gray-300">接班人计划</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 英雄区域 -->
+    <section class="pt-24 pb-12 text-center">
+        <h1 class="text-6xl font-bold mb-6 gradient-text">2024巴菲特股东大会</h1>
+        <p class="text-2xl text-gray-300 mb-8">投资大师的智慧结晶</p>
+        <div class="flex justify-center space-x-4">
+            <button class="bg-gradient-to-r from-blue-500 to-blue-700 px-8 py-3 rounded-full font-bold hover:from-blue-600 hover:to-blue-800 transition duration-300">查看全文</button>
+            <button class="border-2 border-white px-8 py-3 rounded-full font-bold hover:bg-white hover:text-black transition duration-300">了解更多</button>
+        </div>
+    </section>
+
+    <!-- Bento Grid 布局 -->
+    <div class="bento-grid">
+        <!-- 投资观点 -->
+        <div class="bento-item col-span-2 row-span-2" id="investment">
+            <h2 class="text-2xl font-bold mb-4">巴菲特核心投资观点</h2>
+            <div class="space-y-4">
+                <div class="flex items-center space-x-4">
+                    <i class="fas fa-dollar-sign text-4xl text-green-500"></i>
+                    <div>
+                        <p class="text-lg">现金储备</p>
+                        <p class="text-gray-400">伯克希尔现金储备达1890亿美元，创历史新高</p>
+                        <a href="cash-reserve.html" class="mt-2 inline-block text-green-400 hover:text-green-300 hover:underline">查看更多详情 →</a>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <i class="fas fa-globe-americas text-4xl text-blue-500"></i>
+                    <div>
+                        <p class="text-lg">美国经济</p>
+                        <p class="text-gray-400">"财政政策是我在美国最担心的问题"</p>
+                        <a href="us-economy.html" class="mt-2 inline-block text-blue-400 hover:text-blue-300 hover:underline">查看更多详情 →</a>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <i class="fas fa-exchange-alt text-4xl text-yellow-500"></i>
+                    <div>
+                        <p class="text-lg">贸易观点</p>
+                        <p class="text-gray-400">"贸易不应成为武器"，保护主义是严重错误</p>
+                        <a href="trade-view.html" class="mt-2 inline-block text-yellow-400 hover:text-yellow-300 hover:underline">查看更多详情 →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 苹果减持 -->
+        <div class="bento-item" id="apple">
+            <h2 class="text-xl font-bold mb-4">苹果股票减持</h2>
+            <div class="flex items-center space-x-4">
+                    <i class="fab fa-apple text-4xl text-gray-300"></i>
+                    <div>
+                        <p class="text-gray-400">伯克希尔减持苹果股份</p>
+                        <p class="text-sm">库克表示已与巴菲特讨论减持事宜</p>
+                        <a href="apple-stock.html" class="mt-2 inline-block text-blue-400 hover:text-blue-300 hover:underline">查看更多详情 →</a>
+                    </div>
+                </div>
+        </div>
+
+        <!-- 日本投资 -->
+        <div class="bento-item" id="japan">
+            <h2 class="text-xl font-bold mb-4">日本投资</h2>
+            <div class="flex items-center space-x-4">
+                    <i class="fas fa-yen-sign text-4xl text-red-500"></i>
+                    <div>
+                        <p class="text-gray-400">伯克希尔在日本投资已达200亿美元</p>
+                        <p class="text-sm">巴菲特表示打算继续持有日本商社股票五六十年</p>
+                        <a href="japan-investment.html" class="mt-2 inline-block text-red-400 hover:text-red-300 hover:underline">查看更多详情 →</a>
+                    </div>
+                </div>
+        </div>
+
+        <!-- 接班人计划 -->
+        <div class="bento-item col-span-2" id="successor">
+            <h2 class="text-xl font-bold mb-4">接班人计划</h2>
+            <div class="flex items-center space-x-4">
+                    <i class="fas fa-user-tie text-4xl text-purple-500"></i>
+                    <div>
+                        <p class="text-gray-400">伯克希尔非保险业务负责人阿贝尔年底应会接任CEO</p>
+                        <p class="text-sm">巴菲特表示不会抛售任何所持的伯克希尔股份</p>
+                        <a href="succession-plan.html" class="mt-2 inline-block text-purple-400 hover:text-purple-300 hover:underline">查看更多详情 →</a>
+                    </div>
+                </div>
+        </div>
+
+        <!-- AI观点 -->
+        <div class="bento-item">
+            <h2 class="text-xl font-bold mb-4">AI观点</h2>
+            <div class="flex items-center space-x-4">
+                <i class="fas fa-robot text-4xl text-teal-500"></i>
+                <div>
+                    <p class="text-gray-400">巴菲特将AI类比于核武器的发明</p>
+                    <p class="text-sm">"有巨大的潜在好处和巨大的潜在危害"</p>
+                    <a href="ai-view.html" class="mt-2 inline-block text-teal-400 hover:text-teal-300 hover:underline">查看更多AI观点 →</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 数据统计 -->
+        <div class="bento-item">
+            <h2 class="text-xl font-bold mb-4">大会数据</h2>
+            <div class="text-center">
+                <p class="stats-number">1.97万</p>
+                <p class="text-gray-400">现场观众人数</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 页脚 -->
+    <footer class="py-8 text-center text-gray-500">
+        <p>信息来源：<a href="https://www.36kr.com/p/2762298191510528" class="text-blue-400 hover:underline">36氪</a>、<a href="https://www.huxiu.com/article/4310322.html" class="text-blue-400 hover:underline">虎嗅网</a></p>
+        <p class="mt-2">© 2024 巴菲特股东大会 @唐臻卓Tome</p>
+    </footer>
+
+    <script>
+        // Framer Motion动画效果
+        const bentoItems = document.querySelectorAll('.bento-item');
+        bentoItems.forEach((item, index) => {
+            item.style.opacity = 0;
+            item.style.transform = 'translateY(20px)';
+            
+            setTimeout(() => {
+                item.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                item.style.opacity = 1;
+                item.style.transform = 'translateY(0)';
+            }, 100 * index);
+        });
+    </script>
+</body>
+</html>
